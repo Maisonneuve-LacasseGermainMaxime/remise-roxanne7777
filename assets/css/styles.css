@@ -47,6 +47,7 @@ nav {
 	align-items: center;
 	font-family: "Ghostz";
 	background-color: #d8c99b;
+	border-radius: 5px;
 }
 
 ul {
@@ -93,6 +94,7 @@ aside {
 	color: #d8c99b;
 	font-size: 1.5rem;
 	position: relative;
+	border-radius: 5px;
 }
 
 section {

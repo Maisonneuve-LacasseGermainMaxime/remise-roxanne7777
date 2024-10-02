@@ -47,7 +47,7 @@ nav {
 	align-items: center;
 	font-family: "Ghostz";
 	background-color: #d8c99b;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 ul {
@@ -64,7 +64,7 @@ li {
 
 a {
 	text-decoration: none;
-	color: #3b403b;
+	color: var(--couleur-texte);
 	font-size: 2rem;
 	font-weight: bold;
 }
@@ -94,7 +94,7 @@ aside {
 	color: #d8c99b;
 	font-size: 1.5rem;
 	position: relative;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 section {
@@ -110,6 +110,9 @@ img {
     max-height: 400px;
 }
 
+h3 {
+	font-family: "Ghostz";
+}
 footer {
 	min-height: 100px;
 }

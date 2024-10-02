@@ -1,0 +1,13 @@
+Fonctionnalités: 
+- Un mode sombre/clair dont la valeur est conservée dans le local storage.
+- Une boite modale qui apparait au bout de 5 secondes et qui peut être fermée à l'aide d'un bouton.
+- Une animation au défilement et une animation de dégradé.
+- Un carrousel d'images qui change automatiquement avec un bouton pour avancer et un bouton pour reculer. 
+
+Choix de design: La police pour la navigation rappelle les vieux films d'horreur. La palette de couleurs s'inspire des couleurs classiques associées à l'Halloween, notamment le orange et le violet. Les teintes vives des couleurs ainsi que le motif de fond rendent le sujet amusant, ludique et accessible à tous, malgré le caractère épeurant qu'il peut revêtir, surtout auprès des jeunes enfants. Les photos plus sérieuses et les couleurs du mode sombre permettent de garder l'intérêt des utilisateurs qui préfèrent l'aspect effrayant et anxiogène de l'Halloween.
+
+Difficultés: J'ai eu de la difficulté avec le scroll animator. Je ne suis pas arrivée à faire une animation fluide. Même simplement faire disparaitre les sections a été compliqué. Quand j'ai enfin réussi, je n'ai pas trouvé comment ajuster le css pour que la section carrousel ait une apparence différente des deux autres sections, même en ajoutant une classe css ou en sélectionnant avec le data ou avec plus de précision. J'ai de la difficulté avec les animations en général.
+
+Structure: Separation of concerns - Le code utilise une approche modulaire. Le premier niveau de séparation contient les pages html, le css, le javascript, les images et les polices. Ensuite, à l'intérieur du css, les fichiers concernant les composantes réutilisables sont regroupés dans un sous-dossier. Dans le dossier du javascript, les classes, les composantes et les pages ont chacune leur sous-dossier. Les classes et les fonctions des composantes sont exportées et importées dans le fichier javascript correspondant à la page où elles sont utilisées.
+
+Tests et contrôle qualité: J'ai utilisé l'inspecteur pour voir les erreurs et console.log pour tester.

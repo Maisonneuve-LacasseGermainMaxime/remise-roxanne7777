@@ -1,0 +1,54 @@
+.carrousel {
+    display: flex;
+    
+}
+
+.conteneur-image-principale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    min-width: 100dvh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.image-principale {
+    max-width: 90%; 
+}
+
+.conteneur-image-principale>.bouton {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    height: 22px;
+    width: 100px;
+    cursor: pointer;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.conteneur-image-principale>.bouton:hover {
+    background-color: #7c2778;
+}
+
+.conteneur-image-principale>.bouton[data-direction="-1"] {
+    margin-right: 15px; 
+}
+
+.conteneur-image-principale>.bouton[data-direction="1"] {
+    margin-left: 15px;
+}
+
+.carrousel-liste-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.conteneur-image-navigation img {
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+    cursor: pointer;
+}

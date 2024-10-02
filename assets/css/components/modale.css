@@ -1,0 +1,60 @@
+.modale-conteneur {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    z-index: 1000;
+    position: fixed;
+}
+
+.modale {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 25%;
+    height: 40%;
+    padding: 50px;
+    margin-top: 130px;
+    background: linear-gradient(to top right, #e36414, #7c2778, #f4d06f, #293f14);
+    background-size: 200% 200%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+    font-weight: bold;
+    animation: degrade 10s ease-in-out infinite;
+}
+
+.fermer-modale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e36414;
+    width: 120px;
+    height: 45px;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    cursor:pointer
+}
+
+.fermer-modale:hover {
+    background-color: lemonchiffon;
+    color: #DC7F2E;
+    transform: translate(-2%, -5%);
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.invisible {
+    display: none;
+}
+
+@keyframes degrade {
+    0%, 100% {
+		background-position: 0% 50%;
+	}
+    
+    50% {
+		background-position: 100% 50%;
+	}
+}

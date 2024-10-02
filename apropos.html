@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>À propos</title>
+        <script type="module" src="assets/js/pages/apropos.js" defer></script>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/components/modale.css">
+        <link rel="stylesheet" href="assets/css/components/carrousel.css">
+        
+    </head>
+    <body data-page="a-propos" data-theme="light">
+        <header>
+            <a href="index.html">
+                <img src="./assets/img/logo-citrouille.svg" alt="logo" class="logo">
+                <!--<a href="https://www.vectorstock.com/royalty-free-vector/halloween-pumpkin-icon-logo-ghost-character-vector-49000048">Vector image by VectorStock / GraphicsMaster</a>-->
+            </a>
+            <nav>
+                <ul></ul>
+                <div id="dark-mode">
+                    <div class="bouton" data-mode="dark">Mode sombre</div>
+                    <div class="bouton" data-mode="light">Mode clair</div>
+                </div>
+            </nav>
+        </header>
+        <main>
+
+            <section class="section" id="section1">
+                <div>
+                    <h2>Notre mission</h2>
+                    <p>
+                       Offrir la plus grande gamme de déguisements, décor et accessoires d'Halloween et ce, toute l'année!
+                    </p>
+                </div>
+            </section>
+
+            <div class="carrousel section" data-carrousel>
+                <div class="conteneur-image-principale">
+                    <div class="bouton" data-direction="-1">Reculer</div>
+                    <img class="image-principale" src="" alt="" />
+                    <div class="bouton" data-direction="1">Avancer</div>
+                </div>
+            </div>
+
+            <section class="section" id="section2">
+                <div>
+                    <h2>De tout pour toute la famille</h2>
+                    <p>Que vous préfériez le pastel goth, le spooky cute ou le creepy gore, vous trouverez de quoi alimenter votre passion pour l'Halloween!</p>
+                    <a href="/">Voir plus</a>
+                </div>
+            </section>
+
+            <div class="modale-conteneur invisible">
+                <div class="modale">
+                    <h2 class="modale-header">Titre</h2>
+                    <p>Contenu</p>
+                    <div class="fermer-modale">Fermer</div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+</html>

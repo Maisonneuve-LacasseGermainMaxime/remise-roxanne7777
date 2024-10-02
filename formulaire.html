@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Travail pratique 2</title>
+        <script type="module" src="assets/js/pages/formulaire.js" defer></script>
+        <link rel="stylesheet" href="assets/css/form.css">
+    </head>
+    <body data-theme="light">
+        <header>
+            <a href="index.html">
+                <img src="./assets/img/logo-citrouille.svg" alt="logo" class="logo">
+                <!--<a href="https://www.vectorstock.com/royalty-free-vector/halloween-pumpkin-icon-logo-ghost-character-vector-49000048">Vector image by VectorStock / GraphicsMaster</a>-->
+            </a>
+            <nav>
+                <ul></ul>
+            </nav>
+        </header>
+        <main>
+            
+            <form action="" method="post">
+                <section class="conteneur">
+                    <h2>Informations sur le client</h2>
+                    <div>
+                        <label for="nom">Nom complet: </label>
+                        <input type="text" id="nom" name="nom" required>
+                        <span class="erreur"></span>
+                    </div>
+                    <div>
+                        <label for="telephone">Numéro de téléphone: </label>
+                        <input type="tel" id="telephone" name="telephone" required>
+                        <span class="erreur"></span>
+                    </div>
+                    <div>
+                        <label for="courriel">Courriel: </label>
+                        <input type="email" id="courriel" name="courriel" required>
+                        <span class="erreur"></span>
+                    </div>
+                    <div>
+                        <label for="adresse">Adresse: </label>
+                        <input type="text" id="adresse" name="adresse" required>
+                        <span class="erreur"></span>
+                    </div>
+                    <div>
+                        <label for="code-postal">Code postal :</label>
+                        <input type="text" id="code-postal" name="code-postal" pattern="[A-z][0-9][A-z]\s?[0-9][A-z][0-9]" required>
+                        <span class="erreur"></span>
+                    </div>
+                    <div class="navigation-section">
+                        <div class="on" data-direction="-1">Précédent</div>
+                        <div class="n" data-direction="1">Suivant</div>
+                    </div>
+                </section>
+                <section class="conteneur">
+                    <h2>Informations sur la commande</h2>
+                    <div>
+                        <label for="choix">Produit: </label>
+                        <select id="choix" name="choix" required>
+                            <option value="">Choisir une option</option>
+                            <option value="Sorcière">Sorcière</option>
+                            <option value="Fantôme">Fantôme</option>
+                            <option value="Zombie">Zombie</option>
+                            <option value="Épouvantail">Épouvantail</option>
+                            <option value="Calavera">Calavera</option>
+                        </select>
+                        <span class="erreur"></span>
+                    </div>
+                    <div class="radio">
+                        <p>Taille:</p>
+                        <label for="small">Petit</label>
+                        <input type="radio" id="small" name="taille" value="Petit">
+                        <span class="erreur"></span>
+
+                        <label for="medium">Moyen</label>
+                        <input type="radio" id="medium" name="taille" value="Moyen" checked>
+                        <span class="erreur"></span>
+
+                        <label for="large">Grand</label>
+                        <input type="radio" id="large" name="taille" value="Grand">
+                        <span class="erreur"></span>
+                    </div>
+                    <div>
+                        <label for="quantite">Quantité: </label>
+                        <input type="number" name="quantite" id="quantite" value="0" min="1" max="10" required>
+                        <span class="erreur"></span>
+                    </div>
+                    <div>
+                        <label for="express">Désirez-vous la livraison express?</label>
+                        <input type="checkbox" id="express" name="express">
+                        <span class="erreur"></span>
+                    </div>
+                    <div>
+                        <label for="commentaire">Commentaires ou demandes particulières: </label>
+                        <textarea name="commentaire" id="commentaire" rows="4" cols="50" maxlength="20" placeholder="Entrez votre message"></textarea>
+                        <span class="erreur"></span>
+                    </div>
+                    
+                    <div class="navigation-section">
+                        <div class="bouton" data-direction="-1">Précédent</div>
+                        <div class="bouton" data-direction="1">Suivant</div>
+                    </div>
+                </section>
+                <section class="conteneur resume">
+                    <h2>Résumé</h2>
+                    <p>
+                        Nom complet:
+                        <span data-name="nom"></span>
+                    </p>
+                    <p>
+                        Numéro de téléphone:
+                        <span data-name="telephone"></span>
+                    </p>
+                    <p>
+                        Courriel:
+                        <span data-name="courriel"></span>
+                    </p>
+                    <p>
+                        Adresse:
+                        <span data-name="adresse"></span>
+                    </p>
+                    <p>
+                        Code postal:
+                        <span data-name="code-postal"></span>
+                    </p>
+                    <p>
+                        Produit:
+                        <span data-name="choix"></span>
+                    </p>
+                    <p>
+                        Taille:
+                        <span data-name="taille"></span>
+                    </p>
+                    <p>
+                        Quantité:
+                        <span data-name="quantite"></span>
+                    </p>
+                    <p>
+                        Livraison express:
+                        <span data-name="express"></span>
+                    </p>
+                    <p>
+                        Informations additionnelles:
+                        <span data-name="commentaire"></span>
+                    </p>
+                    <div class="navigation-section">
+                        <div class="bouton" data-direction="-1">Précédent</div>
+                        <input type="submit" class="bouton" value="Envoyer le formulaire">
+                    </div>
+                </section>
+            </form>
+        </main>
+    </body>
+</html>

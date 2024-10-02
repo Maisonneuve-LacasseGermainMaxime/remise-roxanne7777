@@ -1,0 +1,1 @@
+Bonjour Maxime, je sais que ce projet n'est pas aussi bon qu'il aurait pu l'être. Je m'en excuse sincèrement. Je suis consciente de tout ce qui manque et ce qui aurait pu mieux fonctionner, mais je suis à court d'énergie intellectuelle en ce moment. Ce n'est pas parce que je ne prends pas le cours au sérieux. Je voulais seulement préciser ça! Merci!

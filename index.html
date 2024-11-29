@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accueil TP3</title>
+        <script type="module" src="assets/js/pages/accueil.js" defer></script>
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body data-theme="light">
+        <header>
+            <a href="index.html">
+                <img src="./assets/img/logo-citrouille.svg" alt="logo" class="logo">
+                <!--<a href="https://www.vectorstock.com/royalty-free-vector/halloween-pumpkin-icon-logo-ghost-character-vector-49000048">Vector image by VectorStock / GraphicsMaster</a>-->
+            </a>
+            <nav>
+                <ul></ul>
+                <div id="dark-mode">
+                    <div class="bouton" data-mode="dark">Mode sombre</div>
+                    <div class="bouton" data-mode="light">Mode clair</div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <aside id="details">
+
+            </aside>
+            <section>
+                <h1>Costumes</h1>
+                <div class="trier">
+                    <p>Trier par: </p>
+                    <ul>
+                        <li id="alphabetique">ordre alphabétique</li>
+                        <li id="croissant">prix croissant</li>
+                        <li id="decroissant">prix décroissant</li>
+                    </ul>
+                </div>
+                <div id="liste" class="grille"></div>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
